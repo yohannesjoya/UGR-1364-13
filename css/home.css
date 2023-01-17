@@ -43,8 +43,6 @@
 .Header__content-description .company-slogan {
   margin: 0.65rem auto 0.85rem auto;
   font-size: min(2.5vw, 3rem);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
   /* font-size: rem; */
 }
 .Learn__more-btn {

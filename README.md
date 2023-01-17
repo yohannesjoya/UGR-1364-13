@@ -1,6 +1,11 @@
-# UGR-1364-13
+Class assignment project with
+
+- HTML
+- Css
+- JavaScript
+  full responsive
+
+## Only Contrast and justified text warnings are left due to design and artistic values from WAVE suggestions
 
 
-## Fundamentals of Web Assignment Wireframe and Site Diagram
-#### it is done on agricultural sector for "" EACC (Ethio agricultural consultation company ) website "" (dont exist in real life)
-- html added
+

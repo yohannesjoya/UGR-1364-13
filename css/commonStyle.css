@@ -1,0 +1,327 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,900&display=swap"); */
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+input {
+  outline: none;
+  border: none;
+}
+
+/* ----- */
+/*  ------ general classes */
+.active > a {
+  font-weight: bold;
+  color: green;
+}
+
+.slider > span {
+  display: grid !important;
+  place-items: center;
+  margin: auto;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 2rem;
+
+  color: rgba(0, 0, 0, 0.75);
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.slider span:hover {
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  transition: all 0.25s ease;
+}
+.btn-black {
+  background-color: black;
+  font-size: 1rem;
+  color: white !important;
+  cursor: pointer;
+}
+.basic-flex {
+  display: flex;
+  align-items: center;
+}
+/*  ---general classes */
+
+/* ----------- */
+/* ----- Navigation ----- */
+.Nav__wrapper {
+  width: 100%;
+  position: static;
+  top: 0;
+  /* border: 1px solid red; */
+
+  justify-content: space-between;
+  padding: 5px 50px;
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5px;
+  height: 65px;
+}
+.Nav__wrapper-logo img {
+  width: 60px;
+}
+
+.unCollapsed > li {
+  display: inline;
+  margin: 1rem;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.burger-menu {
+  display: none;
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  border: 0;
+  outline: 0;
+  font-size: 2rem;
+}
+
+.collapsed {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.collapsed > li {
+  margin: 1rem auto;
+
+  background-color: rgba(0, 128, 0, 0.15);
+  width: 70%;
+  padding: 10px;
+  text-align: center;
+}
+.collapsed > li:hover {
+  border-bottom: 5px solid green;
+}
+.collapsed > li a {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* ----- Navigation ends here */
+
+/* ------ news letter section style starts here */
+.newsletter__section-wrapper {
+  width: 100%;
+  background-color: rgba(0, 101, 30, 1);
+  padding: 3rem 5rem;
+  color: white;
+}
+.newsletter-header {
+  font-size: min(3rem, 5.5vw);
+}
+.newsletter__subscription {
+  margin: 1.25rem auto 0.25rem auto;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.newsletter__subscription > form {
+  width: 70%;
+}
+.newsletter__subs-description {
+  margin-top: 0.5rem;
+  width: 25%;
+  text-align: justify;
+  font-size: 0.95rem;
+}
+.newsletter__subscription > form > input {
+  width: 69%;
+  height: 2.75rem;
+}
+.newsletter__subscription > form > input::placeholder {
+  padding-left: 1rem;
+}
+.newsletter__subscription > form > button {
+  width: 29%;
+  height: 3rem;
+  font-size: min(1rem, 3vw);
+}
+.newsletter-section form {
+  display: flex;
+  align-items: center;
+}
+.newsletter-section form label[for="email"] {
+  color: transparent;
+}
+/* ------ news letter section style ends here */
+
+.backtotop {
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(0, 101, 30, 1);
+  border-radius: 50%;
+
+  font-weight: 600;
+  text-align: center;
+  line-height: 3rem;
+  margin: 2rem auto 0 auto;
+}
+.backtotop > a {
+  color: white !important;
+}
+/* ------ footer section style starts here */
+footer {
+  padding: 2rem 5rem;
+  margin: 2rem auto 0px auto;
+  background-color: rgba(0, 101, 30, 1);
+  color: white;
+}
+footer a {
+  color: white;
+}
+.footer__navigation {
+  width: 80%;
+  margin: 1rem auto;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer-logo {
+  width: 100px;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 50%;
+}
+.footer-col > h1 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.footer-col > ul > li {
+  margin: 0.75rem auto;
+
+  padding: 5px 0px 5px 30px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.footer-company-name > ul > li > a {
+  cursor: pointer;
+}
+.column-2 > ul > li > a > i {
+  margin-right: 1rem;
+}
+.footer-company-name,
+.copyRight {
+  text-align: center;
+}
+.footer-company-name {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+/* ------ footer section style ends here */
+
+/* for screen less than 880px */
+@media (0px < width < 880px) {
+  .newsletter-section form {
+    width: 100%;
+  }
+
+  .newsletter__subscription {
+    flex-direction: column;
+  }
+  .newsletter__subs-description {
+    width: 100%;
+    margin: 0.5rem auto;
+  }
+  .footer-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .footer__navigation {
+    width: 80% !important;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+  .unCollapsed {
+    display: none;
+  }
+  .unCollapsed > li {
+    color: white !important;
+  }
+}
+
+@media screen and (0<width<620px) {
+  .newsletter__section-wrapper {
+    padding: 25px;
+  }
+  .newsletter__subscription {
+    width: 90%;
+    margin: auto;
+  }
+  .footer__navigation {
+    display: block;
+    align-items: flex-start;
+  }
+  .footer-col > h1 {
+    padding: 5px;
+    margin: 1rem auto;
+    width: 70% !important;
+    background-color: rgba(255, 255, 255, 0.15);
+    position: relative;
+  }
+  .footer-col > h1::after {
+    position: absolute;
+    content: "+";
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: white;
+    color: green;
+    right: -20px;
+    top: 0;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .footer-col > ul {
+    display: none;
+  }
+}
+
+/*  */
+.unCollapsedFooterUl {
+  display: block !important;
+}
+.unCollapsedFooterUl > li {
+  padding: 5px 0px 5px 30px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+/*  */
+.closer {
+  width: 40px !important;
+  height: 40px !important;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px !important;
+  color: white;
+  font-weight: bold;
+  font-size: 19px;
+}

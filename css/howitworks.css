@@ -1,0 +1,141 @@
+.Header__intro-section {
+  height: 500px;
+  padding: 3rem 0;
+  background-image: url("../assets/bg1.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+.Header__intro-header {
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.Header__intro-title {
+  text-align: center;
+}
+/* how it works header ends here */
+.common-container {
+  width: 80%;
+  margin: 3.25rem auto;
+}
+.common-container .Common-header {
+  font-size: 2rem;
+  color: #ff6e40;
+  margin-bottom: 1.5rem;
+}
+.common-container .common-description,
+.terms-description {
+  width: 90%;
+  margin: auto;
+  text-align: justify;
+  font-size: 0.95rem;
+  line-height: 1.25rem;
+}
+
+/* common styles */
+
+.terms-header {
+  text-align: center;
+  margin: 2.25rem auto;
+}
+
+/* section two special */
+
+.bullet-point-row1,
+.bullet-point-row2 {
+  display: flex;
+  align-items: center;
+  margin: 1.96rem auto;
+  width: 90%;
+}
+.bullet-point-row1 {
+  animation: 1s ease-out 0s 1 slideInFromRightLittle;
+}
+.bullet-point-row2 {
+  animation: 1s ease-out 0s 1 slideInFromLeftLittle;
+}
+
+@keyframes slideInFromLeftLittle {
+  0% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromRightLittle {
+  0% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.b-point-1,
+.b-point-3 {
+  width: 50%;
+  /* border: 1px solid green; */
+  display: flex;
+}
+.b-point-2,
+.b-point-4 {
+  width: 50%;
+  display: flex;
+}
+
+.bullet-point-row1 i,
+.bullet-point-row2 i {
+  font-size: min(2.25rem, 4.25vw);
+  /* background-color: rgba(16, 16, 16, 0.75); */
+  border-radius: 1rem;
+  color: black;
+  display: grid;
+  place-items: center;
+}
+.bullet-point-row1 > div h1,
+.bullet-point-row2 > div h1 {
+  margin-left: 1rem;
+  line-height: 4rem;
+font-size: min(1.25rem,8vw);
+}
+/* section 2 special ends here */
+
+/* section of slogan */
+.slogan-wrapper {
+  width: 90%;
+  color: white;
+  margin: 3rem auto;
+  padding: 3.75rem 1rem;
+  border-radius: 6rem;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.slogan-wrapper .slogan {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 800;
+}
+
+@media screen and (0<width<870px) {
+  .bullet-point-row1,
+  .bullet-point-row2 {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .b-point-1,
+  .b-point-2,
+  .b-point-3,
+  .b-point-4 {
+    width: 100%;
+  }
+  .b-point-1 {
+    margin-top: 1.75rem;
+  }
+}

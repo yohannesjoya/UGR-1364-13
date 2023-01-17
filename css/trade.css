@@ -1,0 +1,116 @@
+.Header__intro-section {
+  height: 500px;
+  padding: 3rem 0;
+  background-image: url("../assets/consultE.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+.Header__intro-header {
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.Header__intro-title {
+  text-align: center;
+  font-size: 2rem;
+}
+/*  trade header ends here */
+
+/* recent trade starts here */
+.recentTrade-wrapper {
+  width: 85%;
+
+  margin: 3.5rem auto;
+  padding: 1rem;
+}
+.recentTrade-header {
+  font-size: 3.15rem;
+}
+.recentTrade-title {
+  margin-bottom: 1rem;
+}
+.recentTrade-content-flex {
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0.5rem 3rem;
+}
+.product {
+  width: 380px;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.15);
+}
+.product-des-wrapper {
+  padding: 0.5rem 1rem;
+}
+.product img {
+  width: 100%;
+  height: 250px;
+}
+.product h1 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.product p {
+  margin: 0.5em auto;
+}
+.date-flex {
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.product strong {
+  font-weight: 600;
+}
+/* recent trade ends here */
+/* on completion trades starts here */
+
+.completionTrades-wrapper {
+  width: 80%;
+  margin: 2rem auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.C-product {
+  width: 250px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.15);
+  flex-direction: column;
+  margin: 1.5rem auto;
+  height: 300px;
+}
+.C-product img {
+  margin-top: 0 !important;
+  width: 100%;
+  min-height: 150px;
+}
+.C-product > * {
+  margin: 0.65rem auto;
+}
+.C-product-name {
+  font-size: 1.25rem;
+}
+
+/* on completion trades ends here*/
+
+/* media query */
+@media screen and (0<width<1100px) {
+  .recentTrade-wrapper {
+    width: 95%;
+    padding-left: 15px;
+  }
+  .recentTrade-content-flex {
+    gap: 2rem !important
+    ;
+  }
+}
+@media screen and (0<width<680px) {
+  .product {
+    min-width: 300px;
+  }
+}

@@ -1,0 +1,186 @@
+/*  ---- EACC style starts here */
+
+.Eacc__section-wrapper {
+  width: 70%;
+  margin: 3rem auto;
+}
+.Eacc__section-wrapper .Eacc-header {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  margin: 1.75rem auto;
+}
+.Eacc-description {
+  line-height: 1.4rem;
+  text-transform: lowercase;
+  text-align: justify;
+  font-weight: 400;
+  height: 220px;
+  overflow-y: hidden;
+  position: relative;
+}
+.Eacc-description::after {
+  position: absolute;
+  bottom: -0px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 40px;
+background: linear-gradient(to top, white, rgba(0,0,0,0));
+  z-index: 1;
+}
+.Eacc-serviceBtn {
+  width: 10rem;
+  height: 3rem;
+  display: block;
+  margin: 2.75rem auto 1rem auto;
+}
+/*  ---- EACC style ends here */
+/*  ---- vision mission style starts here */
+.visionMission__section-wrapper {
+  width: 100%;
+  justify-content: center;
+  gap: 2rem;
+  margin: 5.5rem auto;
+  flex-wrap: wrap;
+}
+.Vision-container,
+.Mission-container {
+  width: 350px;
+  border-radius: 1.25rem;
+  box-shadow: 0 0 6px 6px rgba(6, 77, 6, 0.1);
+}
+.Vision-container > img,
+.Mission-container > img {
+  width: 100%;
+  margin: 1.3rem auto;
+}
+.vision-texts,
+.Mission-texts {
+  width: 80%;
+
+  margin: 1rem auto;
+  list-style: circle;
+}
+.vision-texts li,
+.Mission-texts li {
+  list-style: circle;
+  margin: 0.5rem auto;
+  font-size: 0.9rem;
+}
+.underline {
+  display: block;
+  margin: 2.75rem auto 1rem auto;
+}
+/*  ---- vision mission style ends here */
+
+/*  ---- our team style starts here */
+.Team__section-wrapper {
+  width: 80%;
+  margin: 3rem auto;
+}
+.Team__section-wrapper .Team-header {
+  font-size: 3.25rem;
+  text-align: center;
+}
+.Team-content-flex {
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+  /* background-color: red; */
+}
+.Team-content-flex .Team-member {
+  width: 220px;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+.Team-member img {
+  width: 100%;
+}
+.member-description span {
+  display: block;
+  margin: 0.25rem auto 1rem 2rem;
+  font-weight: 500;
+}
+
+/*  ---- our team style ends here */
+
+/*  ---- companies style starts here */
+.Companies__section-wrapper {
+  width: 80%;
+  margin: 5rem auto;
+}
+.Companies-header {
+  font-size: 3.15rem;
+  text-align: center;
+}
+.Companies-title {
+  text-align: center;
+  font: 0.85rem;
+}
+.Companies-content-flex {
+  gap: 1.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+.Company {
+  width: 220px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+  padding: 5px 15px;
+}
+.Company img {
+  width: 100%;
+}
+.Company span {
+  margin: 1rem auto;
+  font-weight: 500;
+}
+
+/*  ---- companies style ends here */
+
+/*  ---- Organizational structure style ends here */
+
+.OrgStructure__section-wrapper {
+  width: 80%;
+  margin: 3rem auto 4rem auto;
+}
+
+.OrgStructure__section-wrapper table {
+  margin-top: 1rem;
+  border-collapse: collapse;
+  width: 100%;
+}
+.OrgStructure__section-wrapper td,
+.OrgStructure__section-wrapper th {
+  border: 1px solid #9c9a9a;
+  text-align: left;
+  padding: 15px 5px;
+
+}
+
+/*  ---- companies style ends here */
+
+@media screen and (0<width<610px) {
+  .Team__section-wrapper,
+  .Companies__section-wrapper {
+    width: 90%;
+  }
+  .OrgStructure__section-wrapper {
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+  }
+  table {
+    margin: auto;
+  }
+  .Eacc__section-wrapper {
+    width: 85%;
+  }
+}

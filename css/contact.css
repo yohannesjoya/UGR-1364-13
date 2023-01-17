@@ -1,0 +1,119 @@
+/* ---- contact intro style starts here */
+.Contact__intro-wrapper {
+  width: 60%;
+  margin: 3rem auto;
+}
+.Contact__intro-header {
+  font-size: 3.15rem;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+.Contact__intro-description {
+  text-align: justify;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.35rem;
+}
+.Contact__intro-learnBtn {
+  display: block;
+  width: 10rem;
+  height: 3rem;
+  margin: 0.25rem auto;
+}
+/* ---- contact intro style ends here */
+
+/* ---- contact form style starts here */
+
+.Contact__form-wrapper {
+  width: 80%;
+  height: 580px;
+  margin: 4.75rem auto;
+
+  box-shadow: 0 0 14px 1px rgba(0, 0, 0, 0.1);
+}
+.Contact__form-wrapper > div {
+  width: 50%;
+}
+.Contact__form-rightSide > img {
+  width: 100%;
+}
+.Contact__form {
+  padding: 3rem 0rem;
+}
+.Contact__form > div {
+  width: 80%;
+  margin: 2rem auto;
+  gap: 1rem;
+}
+
+.Contact__form > div label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.Contact__form > div:first-child > div {
+  width: 50%;
+}
+
+.Contact__form > div input {
+  width: 100%;
+  height: 2.5rem;
+  margin: 0.5rem auto;
+  border: 0.25px solid rgba(0, 0, 0, 0.5);
+  
+}
+.Contact__form > div:nth-child(2) > textarea {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 8rem;
+  resize: none;
+  padding: 10px;
+  border: 0.25px solid rgba(0, 0, 0, 0.5);
+
+}
+.Contact__form-btn {
+  display: block;
+  width: 10rem;
+  height: 3rem;
+}
+/* ---- contact  form style ends here */
+@media screen and (0<width<880px) {
+  .Contact__form-wrapper {
+    position: relative;
+  }
+  .Contact__form-leftSide {
+    width: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .Contact__form-rightSide {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0.2;
+  }
+}
+
+@media screen and (0<width<480px) {
+.Contact__form-wrapper {
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  .nameAndEmail {
+    flex-direction: column;
+    width: 100% !important;
+    padding: 5px 40px !important;
+  }
+  .nameAndEmail > div {
+    padding: 0;
+
+width: 100% !important;
+  }
+  .nameAndEmail > div > input {
+    width: 100% !important;
+  }
+}

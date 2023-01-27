@@ -10,123 +10,210 @@
 
     <!-- link to font awesome -->
 
-    <!-- link to common style sheet -->
+    <!-- link to bootstrap style sheet -->
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
 
     <!-- link to component specific style sheet -->
+    <link rel="stylesheet" href="./style.css">
     <title>News</title>
 </head>
 
 <body>
     <header>
 
-        <nav id="nav">
-            <div>
-                <a href="/Home.html"><img src="./assets/logo.png" alt="This is logo Image in navigation">
-                </a>
-            </div>
-            <button>
-                =
-            </button>
-            <ul>
-                <li><a href="./Home.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./trade.html">Trade</a></li>
-                <li><a href="./news.html">News</a></li>
-                <li><a href="./howitworks.html">How It Works</a></li>
-                <li><a href="./services.html">Services</a></li>
-            </ul>
-        </nav>
-        <main>
-
-            <h1>Latest News</h1>
-            <!-- ################## section  starts here (Latest news slider)#################-->
-
-            <main>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
                 <div>
-                    <div><span>
-                            < </span>
-                    </div>
-                    <div>
+                    <a class="z-5 navbar-brand mx-auto" href="./index.html"><img width='60px' src="./assets/logo.png"
+                            alt="This is logo Image in navigation">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">=</span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul
+                        class="z-5 navbar-nav d-flex flex-column flex-lg-row align-items-center bg-light text-center position-absolute end-0 justify-content-lg-end vh-lg-100 py-5 py-lg-0">
 
-                        <div>
-                            <img loading="lazy" src="./assets/news6.jpg" alt="this is lates news 1">
+                        <li class="nav-item mx-2"><a class='nav-link fs-6 text-black ' href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-2"><a class='nav-link fs-6 text-black  ' href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item mx-2"><a class='nav-link fs-6 text-black ' href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item mx-2"><a class='nav-link fs-6 text-black ' href="./trade.html">Trade</a>
+                        </li>
+                        <li class="nav-item mx-2"><a class='nav-link fs-6 text-success fw-bolder '
+                                href="./news.html">News</a>
+                        </li>
+                        <li class="nav-item mx-2"><a class='nav-link fs-6 text-black ' href="./howitworks.html">How
+                                It
+                                Works</a></li>
+                        <li class="nav-item mx-2"><a class='nav-link fs-6 text-black '
+                                href="./services.html">Services</a>
+                        </li>
+                    </ul>
 
-                            <div><a
-                                    href="https://foodtank.com/news/2022/12/what-will-be-the-legacy-of-todays-young-farmer-advocates/">See
-                                    Full article</a>
-                            </div>
-                        </div>
-                        <div>
-                            <img loading="lazy" src="./assets/news5.jpg" alt="this is lates news 2">
-                            <div><a
-                                    href="https://foodtank.com/news/2022/12/diversified-pastured-poultry-models-can-reduce-risk-of-hpai/">See
-                                    Full article</a></div>
-                        </div>
-                        <div><img loading="lazy" src="./assets/news4.jpg" alt=loading="lazy""this is lates news 3">
-                            <div><a href="https://foodtank.com/news/2022/12/op-ed-soil-connects-us-to-the-earth/">See
-                                    Full
-                                    article</a></div>
-                        </div>
-                        <div>
-                            <img loading="lazy" src="./assets/news3.jpg" alt="this is lates news 4">
-                            <div><a
-                                    href="https://foodtank.com/news/2022/12/rockefeller-foundation-announces-farmer-led-regenerative-agriculture-grants/">See
-                                    Full article</a>
-                            </div>
-                        </div>
-                        <div>
-                            <img loading="lazy" src="./assets/news2.jpg" alt=" lates news 1this is lates
-                                news 5">
-                            <div><a
-                                    href="https://foodtank.com/news/2022/12/climate-conference-strengthens-agribusiness-support-leaves-small-scale-farmers-behind/">See
-                                    Full article</a>
-                            </div>
-                        </div>
-                        <div>
-                            <img loading="lazy" src="./assets/news1.jpg" alt="this is lates news 6">
-                            <div><a
-                                    href="https://foodtank.com/news/2022/11/film-series-says-out-with-industrial-agriculture-in-with-agroecology-in-africa/">See
-                                    Full article</a>
-                            </div>
-                        </div>
-
-
-
-
-
-                    </div>
-                    <div><span>></span></div>
 
                 </div>
-            </main>
+            </div>
+        </nav>
 
 
 
-            <!-- ################## section  ends here #################-->
+
+
+
+        <!-- ! -->
+        <main>
+
+            <h1 class="my-4 text-center fw-bold">Latest News</h1>
+            <!-- ################## section  starts here (Latest news slider)#################-->
+
+            <div id="carouselExampleControlsNoTouching" class="news-carousel carousel slide" data-bs-touch="false">
+                <div class="carousel-inner w-75 mx-auto px-2 px-md-5">
+                    <div class="carousel-item active">
+                        <div class="d-flex gap-3 justify-content-center align-items-center">
+
+                            <div class="position-relative">
+                                <img height='220px' src="./assets/news6.jpg" alt="this is lates news 1">
+
+                                <div class=" position-absolute h-50 w-100 top-50 start-0"><a
+                                        class="text-black bg-light py-2 d-block w-75 mx-auto text-center text-decoration-none"
+                                        href="https://foodtank.com/news/2022/12/what-will-be-the-legacy-of-todays-young-farmer-advocates/">See
+                                        Full article</a>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="position-relative">
+                                <img height='220px' src="./assets/news5.jpg" alt="this is lates news 2">
+                                <div class=" position-absolute h-50 w-100 top-50 start-0"><a
+                                        class="text-black bg-light py-2 d-block w-75 mx-auto text-center text-decoration-none"
+                                        href="https://foodtank.com/news/2022/12/diversified-pastured-poultry-models-can-reduce-risk-of-hpai/">See
+                                        Full article</a></div>
+                            </div>
+                            <div class="position-relative">
+                                <img height='220px' src="./assets/news4.jpg" alt="this is lates news 3">
+                                <div class=" position-absolute h-50 w-100 top-50 start-0"><a
+                                        class="text-black bg-light py-2 d-block w-75 mx-auto text-center text-decoration-none"
+                                        href="https://foodtank.com/news/2022/12/op-ed-soil-connects-us-to-the-earth/">See
+                                        Full
+                                        article</a></div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex gap-3 justify-content-center align-items-center">
+
+                            <div class="position-relative">
+                                <img height='220px' src="./assets/news4.jpg" alt="this is lates news 3">
+                                <div class=" position-absolute h-50 w-100 top-50 start-0"><a
+                                        class="text-black bg-light py-2 d-block w-75 mx-auto text-center text-decoration-none"
+                                        href="https://foodtank.com/news/2022/12/op-ed-soil-connects-us-to-the-earth/">See
+                                        Full
+                                        article</a></div>
+                            </div>
+                            <div class="position-relative">
+                                <img height='220px' src="./assets/news3.jpg" alt="this is lates news 4">
+                                <div class=" position-absolute h-50 w-100 top-50 start-0"><a
+                                        class="text-black bg-light py-2 d-block w-75 mx-auto text-center text-decoration-none"
+                                        href="https://foodtank.com/news/2022/12/rockefeller-foundation-announces-farmer-led-regenerative-agriculture-grants/">See
+                                        Full article</a>
+                                </div>
+                            </div>
+                            <div class="position-relative">
+                                <img height='220px' src="./assets/news2.jpg" alt=" lates news 1this is lates
+                                                                    news 5">
+                                <div class=" position-absolute h-50 w-100 top-50 start-0"><a
+                                        class="text-black bg-light py-2 d-block w-75 mx-auto text-center text-decoration-none"
+                                        href="https://foodtank.com/news/2022/12/climate-conference-strengthens-agribusiness-support-leaves-small-scale-farmers-behind/">See
+                                        Full article</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex gap-3 justify-content-center align-items-center">
+
+                            <div class="position-relative">
+                                <img height='220px' src="./assets/news6.jpg" alt="this is lates news 1">
+
+                                <div class=" position-absolute h-50 w-100 top-50 start-0"><a
+                                        class="text-black bg-light py-2 d-block w-75 mx-auto text-center text-decoration-none"
+                                        href="https://foodtank.com/news/2022/12/what-will-be-the-legacy-of-todays-young-farmer-advocates/">See
+                                        Full article</a>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="position-relative">
+                                <img height='220px' src="./assets/news5.jpg" alt="this is lates news 2">
+                                <div class=" position-absolute h-50 w-100 top-50 start-0"><a
+                                        class="text-black bg-light py-2 d-block w-75 mx-auto text-center text-decoration-none"
+                                        href="https://foodtank.com/news/2022/12/diversified-pastured-poultry-models-can-reduce-risk-of-hpai/">See
+                                        Full article</a></div>
+                            </div>
+                            <div class="position-relative">
+                                <img height='220px' src="./assets/news4.jpg" alt="this is lates news 3">
+                                <div class=" position-absolute h-50 w-100 top-50 start-0"><a
+                                        class="text-black bg-light py-2 d-block w-75 mx-auto text-center text-decoration-none"
+                                        href="https://foodtank.com/news/2022/12/op-ed-soil-connects-us-to-the-earth/">See
+                                        Full
+                                        article</a></div>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-success rounded-circle" aria-hidden="true"></span>
+
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-success rounded-circle" aria-hidden="true"></span>
+                </button>
+            </div>
+
+            <!--  -->
 
         </main>
+
+
+
+        <!-- ################## section  ends here #################-->
+
     </header>
 
     <!-- #### Video News section starts here -->
     <section>
-        <div>
-            <h1>Latest Video News</h1>
+        <div class="w-75 mx-auto">
+            <h1 class="fw-bold my-5">Latest Video News</h1>
 
-            <div>
-                <div>
-                    <span>
+            <div class="row align-items-center justify-content-center my-4">
+                <div class="col-12 col-sm-4 order-1 order-sm-0">
+                    <span class="d-block text-end">
 
                         Source
 
                     </span>
-                    <span>
+                    <span class="d-block text-end">
                         12/12/2012
 
                     </span>
                 </div>
-                <div>
-                    <video controls>
+                <div class="col-12 col-sm-8 order-0 order-sm-1">
+                    <video class="w-100" controls>
                         <source id="vid1" src="./assets/newsvideos/ETHIOPIA’S_AGRICULTURAL_DEVELOPMENT_AdobeExpress.mp4"
                             type="video/mp4">
                         <track for="vid1" src="./assets/newsvideos/ETHIOPIAS+AGRICULTURAL+DEVELOPMENT_en.vtt"
@@ -134,7 +221,7 @@
                         <track src="./assets/newsvideos/ETHIOPIAS+AGRICULTURAL+DEVELOPMENT_am.vtt" label="Amharic"
                             kind="captions" srclang="no" default>
                     </video>
-                    <h2>Title Goes Here</h2>
+                    <h2 class="fs-5 fw-bold my-2">Title Goes Here</h2>
                     <p>
                         eacc is an abbreviation for ethiopian agricultural consultation company. we works on developing
                         agricultural sector of
@@ -148,9 +235,9 @@
 
             </div>
 
-            <div>
-                <div>
-                    <video controls>
+            <div class="row align-items-center justify-content-center my-4">
+                <div class="col-12 col-sm-8 order-0">
+                    <video class="w-100" controls>
                         <source
                             src="./assets/newsvideos/Ethiopia_s_growing_irrigation-based_agricultural_development__እያደገ_የመጣው_የመስኖ_እርሻ_ልማት_AdobeExpress.mp4"
                             type="video/mp4">
@@ -161,7 +248,7 @@
                             src="./assets/newsvideos/Ethiopias+growing+irrigation-based+agricultural+development++እያደገ+የመጣው+የመስኖ+እርሻ+ልማት_am.vtt"
                             label="Amharic" kind="captions" srclang="no" default>
                     </video>
-                    <h2>Title Goes Here</h2>
+                    <h2 class="fs-5 fw-bold my-2">Title Goes Here</h2>
                     <p>
                         eacc is an abbreviation for ethiopian agricultural consultation company. we works on developing
                         agricultural sector of
@@ -170,16 +257,15 @@
                         described it "we are here to make your farm productive." if you choose to work with
                     </p>
                 </div>
-                <div>
-                    <span>
+                <div class="col-12 col-sm-4 order-1">
+                    <span class="d-block text-start">
 
                         Source
 
                     </span>
-                    <span>
-
-
+                    <span class="d-block text-start">
                         12/12/2012
+
                     </span>
                 </div>
 
@@ -196,10 +282,10 @@
 
     <!-- #### Video News section ends here -->
 
-    <section>
-        <div>
-            <h1>Latest Radio News</h1>
-            <div>
+    <section class="my-4 my-4">
+        <div class="w-100 px-5 mx-auto">
+            <h1 class="fs-4 fw-bold">Latest Radio News</h1>
+            <div class="d-flex flex-column gap-4 align-items-center justify-content-center">
                 <div>
                     <audio controls>
                         <source
@@ -248,27 +334,43 @@
     <!-- ################## section five starts here (news letter) #################-->
 
 
-    <section>
+    <!-- ################## section five starts here (news letter) #################-->
+
+
+<section class="my-4">
+    <div class="w-100 bg-success px-5 py-4 border">
         <div>
-            <h1>News Letter</h1>
-            <div>
-                <p>
-                    Subscribe to Our Daily News letter. you will will be up to date with the latest information
-                </p>
-                <form>
-                    <label for="email">.</label>
-                    <input type="text" id="email" name="Email" placeholder="Email Address">
-                    <button type="submit">Subscribe</button>
-                </form>
+            <h1 class="fw-bold text-white">News Letter</h1>
 
-            </div>
         </div>
+        <div class="row w-100">
+            <p class="col-10 col-md-3 text-white">
+                Subscribe to Our Daily News letter. you will will be up to date with the latest information
+            </p>
+            <form class="col-10 col-md-8 d-sm-flex align-items-center news-letter was-validated">
+                <label for="email" class="display-none form-label">.</label>
+                <input required class="form-control w-75 my-2 py-1" type="text" id="email" name="Email"
+                    placeholder="Email Address">
+                <button class="bg-black px-5 py-1 text-white" type="submit">Subscribe</button>
+            </form>
+
+        </div>
+        <p class="display-none">
+            <br>
+        </p>
+    </div>
 
 
-    </section>
+</section>
     <!-- ################## section five ends here #################-->
+
+
+
     <!-- ################## section six starts here (back to top) #################-->
-    <section> <a href="./Home.html">
+
+    <section class="my-5 mx-auto"> <a
+            class="back-top d-flex align-items-center justify-content-center rounded-circle bg-success mx-auto text-white"
+            href="./news.html">
             <p>' '</p>
             </i>
         </a> </section>
@@ -276,44 +378,53 @@
 
 
     <!-- ####### FOOTER starts here ####### -->
-    <footer>
-        <div>
-            <div>
-                <h1>Useful Links</h1>
-                <ul>
-                    <li><a href="./howitworks.html">How it Works</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./trade.html">Trade</a></li>
-                    <li><a href="./news.html">News</a></li>
-                    <li><a href="./services.html">Services</a></li>
+    <footer class="pt-5 pb-4 mt-5 bg-success">
+        <div class="row w-75 mx-auto">
+            <div class="col-10 col-md mx-1">
+                <h1 class="fs-5 text-white text-center">Useful Links</h1>
+                <ul class="w-50 mx-auto mt-2">
+                    <li class="my-1 list-group-item"><a class="text-white text-decoration-none"
+                            href="./howitworks.html">How
+                            it
+                            Works</a></li>
+                    <li class="my-1 list-group-item"><a class="text-white text-decoration-none"
+                            href="./about.html">About</a></li>
+                    <li class="my-1 list-group-item"><a class="text-white text-decoration-none"
+                            href="./trade.html">Trade</a></li>
+                    <li class="my-1 list-group-item"><a class="text-white text-decoration-none"
+                            href="./news.html">News</a>
+                    </li>
+                    <li class="my-1 list-group-item"><a class="text-white text-decoration-none"
+                            href="./services.html">Services</a>
+                    </li>
                 </ul>
             </div>
-            <div>
-                <h1>Contacts</h1>
-                <ul>
-                    <li>
-                        <a href="https://www.facebook.com">
+            <div class="col-10 col-md mx-1">
+                <h1 class="fs-5 text-white text-center">Contacts</h1>
+                <ul class="w-50 mx-auto mt-2">
+                    <li class="my-1 px-2 list-group-item">
+                        <a class="text-white text-decoration-none" href="https://www.facebook.com">
                             <span>facebook</span>
                         </a>
 
                     </li>
 
-                    <li>
-                        <a href="https://www.twitter.com">
+                    <li class="my-1 px-2 list-group-item">
+                        <a class="text-white text-decoration-none" href="https://www.twitter.com">
 
                             <span>Twitter</span>
                         </a>
                     </li>
 
-                    <li>
-                        <a href="https://www.instagram.com">
+                    <li class="my-1 px-2 list-group-item">
+                        <a class="text-white text-decoration-none" href="https://www.instagram.com">
 
                             <span>Instagram</span>
                         </a>
                     </li>
 
-                    <li>
-                        <a href="https://https://mail.google.com/">
+                    <li class="my-1 px-2 list-group-item">
+                        <a class="text-white text-decoration-none" href="https://https://mail.google.com/">
 
                             <span>Email</span>
                         </a>
@@ -321,25 +432,26 @@
 
                 </ul>
             </div>
-            <div>
-                <h1>Address</h1>
-                <ul>
-                    <li>Ethiopia</li>
-                    <li>Addis Ababa</li>
-                    <li>4kilo, Niger Street</li>
+            <div class="col-10 col-md mx-1 ">
+                <h1 class="fs-5 text-white text-center">Address</h1>
+                <ul class="w-50 mx-auto mt-2">
+                    <li class="text-white text-decoration-none my-1 px-2 list-group-item">Ethiopia</li>
+                    <li class="text-white text-decoration-none my-1 px-2 list-group-item">Addis Ababa</li>
+                    <li class="text-white text-decoration-none my-1 px-2 list-group-item">4kilo, Niger Street</li>
+
                 </ul>
             </div>
         </div>
-        <img src="./assets/logo.png" alt="this is the logo">
-        <h1>EACC</h1>
-        <p>@copyright reserved 2022</p>
+        <img class="d-block mx-auto mt-4 rounded-circle" src="./assets/logo.png" width="90px" alt="this is the logo">
+        <h1 class="fw-bold text-white text-center my-3">EACC</h1>
+        <p class="text-white text-center fs-6 mb-0">@copyright reserved 2022</p>
 
 
 
     </footer>
     <!-- ####### FOOTER ends here ####### -->
-    <!-- general Script link -->
-    <!-- specific script link -->
+    <!-- bootstrap script -->
+    <script src="./bootstrap/bootstrap.min.js"></script>
 
 </body>
 
